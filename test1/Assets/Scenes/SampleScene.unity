@@ -993,7 +993,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb01a5976a0d91148a957670eb7de7a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floorprefabs: []
+  floorprefabs:
+  - {fileID: 3469760572724383293, guid: 86841ae254548fd46a56bdcc9578225f, type: 3}
+  - {fileID: 6395924530920626235, guid: 08f36b0f89a1a00469e32d1339626451, type: 3}
 --- !u!4 &1936124445
 Transform:
   m_ObjectHideFlags: 0
