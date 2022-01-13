@@ -8,17 +8,18 @@ public class floor : MonoBehaviour
     [SerializeField] float moveSpeed = 5f;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(0, moveSpeed*Time.deltaTime, 0);
-        if(transform.position.y > 5f)
+        transform.Translate(0, moveSpeed * Time.deltaTime, 0);
+        if (transform.position.y > 5f)
         {
             Destroy(gameObject);
             transform.parent.GetComponent<floorManger>().SpawnFloor();
+            // test~~~
         }
     }
 }
