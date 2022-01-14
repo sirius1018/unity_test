@@ -5,7 +5,7 @@ using UnityEngine;
 public class floor : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float moveSpeed = 3f;
     void Start()
     {
 
@@ -15,11 +15,10 @@ public class floor : MonoBehaviour
     void Update()
     {
         transform.Translate(0, moveSpeed * Time.deltaTime, 0);
-        if (transform.position.y > 5f)
+        if (transform.position.y > 6f)
         {
             Destroy(gameObject);
             transform.parent.GetComponent<floorManger>().SpawnFloor();
-            // test~~~
         }
     }
 }
